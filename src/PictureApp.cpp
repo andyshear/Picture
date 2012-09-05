@@ -106,7 +106,7 @@ void PictureApp:: blur(uint8_t* image_to_blur, uint8_t* blur_pattern){
 	int y,x,ky,kx;
 
 	for(y=1;y<height-1;y++){
-		for(x=1;y<width-1;x++){
+		for(x=1;x<width-1;x++){
 
 			offset = 3*(x + y*width);
 			if(blur_pattern[offset] < 256/3){
